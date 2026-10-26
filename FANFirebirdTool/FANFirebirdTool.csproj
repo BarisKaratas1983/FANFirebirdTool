@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+	<PropertyGroup>
+		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+		<ProjectGuid>{9DC997D2-AF74-49BA-9684-22C7EFDD725A}</ProjectGuid>
+		<OutputType>WinExe</OutputType>
+		<RootNamespace>FANFirebirdTool</RootNamespace>
+		<AssemblyName>FANFirebirdTool</AssemblyName>
+		<TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+		<FileAlignment>512</FileAlignment>
+		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+		<Deterministic>true</Deterministic>
+	</PropertyGroup>
+	<PropertyGroup>
+		<ApplicationIcon>FANFirebirdTool.ico</ApplicationIcon>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+		<DebugSymbols>true</DebugSymbols>
+		<OutputPath>bin\x64\Debug\</OutputPath>
+		<DefineConstants>DEBUG;TRACE</DefineConstants>
+		<DebugType>full</DebugType>
+		<PlatformTarget>x64</PlatformTarget>
+		<LangVersion>7.3</LangVersion>
+		<ErrorReport>prompt</ErrorReport>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+		<OutputPath>bin\x64\Release\</OutputPath>
+		<DefineConstants>TRACE</DefineConstants>
+		<Optimize>true</Optimize>
+		<DebugType>pdbonly</DebugType>
+		<PlatformTarget>x64</PlatformTarget>
+		<LangVersion>7.3</LangVersion>
+		<ErrorReport>prompt</ErrorReport>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+		<DebugSymbols>true</DebugSymbols>
+		<OutputPath>bin\x86\Debug\</OutputPath>
+		<DefineConstants>DEBUG;TRACE</DefineConstants>
+		<DebugType>full</DebugType>
+		<PlatformTarget>x86</PlatformTarget>
+		<LangVersion>7.3</LangVersion>
+		<ErrorReport>prompt</ErrorReport>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+		<OutputPath>bin\x86\Release\</OutputPath>
+		<DefineConstants>TRACE</DefineConstants>
+		<Optimize>true</Optimize>
+		<DebugType>pdbonly</DebugType>
+		<PlatformTarget>x86</PlatformTarget>
+		<LangVersion>7.3</LangVersion>
+		<ErrorReport>prompt</ErrorReport>
+	</PropertyGroup>
+	<ItemGroup>
+		<Reference Include="System" />
+		<Reference Include="System.Core" />
+		<Reference Include="System.Xml.Linq" />
+		<Reference Include="System.Data.DataSetExtensions" />
+		<Reference Include="Microsoft.CSharp" />
+		<Reference Include="System.Data" />
+		<Reference Include="System.Deployment" />
+		<Reference Include="System.Drawing" />
+		<Reference Include="System.Net.Http" />
+		<Reference Include="System.Windows.Forms" />
+		<Reference Include="System.Xml" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="Controls\EnginePanel.cs" />
+		<Compile Include="Controls\Icons.cs" />
+		<Compile Include="Controls\LogPanel.cs" />
+		<Compile Include="Controls\MenuTile.cs" />
+		<Compile Include="Controls\Ui.cs" />
+		<Compile Include="Controls\VerboseOptions.cs" />
+		<Compile Include="Core\AppInfo.cs" />
+		<Compile Include="Core\KeyValueFile.cs" />
+		<Compile Include="Core\Loc.cs" />
+		<Compile Include="Core\OperationResult.cs" />
+		<Compile Include="Core\Settings.cs" />
+		<Compile Include="Core\Theme.cs" />
+		<Compile Include="Core\ToolRunner.cs" />
+		<Compile Include="Core\Util.cs" />
+		<Compile Include="Engines\CharacterSets.cs" />
+		<Compile Include="Engines\EngineCatalog.cs" />
+		<Compile Include="Engines\FirebirdEngine.cs" />
+		<Compile Include="Forms\AboutForm.cs" />
+		<Compile Include="Forms\BackupForm.cs" />
+		<Compile Include="Forms\CreateForm.cs" />
+		<Compile Include="Forms\MainForm.cs" />
+		<Compile Include="Forms\OperationForm.cs" />
+		<Compile Include="Forms\RestoreForm.cs" />
+		<Compile Include="Forms\ScriptForm.cs" />
+		<Compile Include="Forms\ThemedForm.cs" />
+		<Compile Include="Operations\BackupOperation.cs" />
+		<Compile Include="Operations\CreateOperation.cs" />
+		<Compile Include="Operations\FileNaming.cs" />
+		<Compile Include="Operations\OperationOptions.cs" />
+		<Compile Include="Operations\RestoreOperation.cs" />
+		<Compile Include="Operations\ScriptRunner.cs" />
+		<Compile Include="Program.cs" />
+		<Compile Include="Properties\AssemblyInfo.cs" />
+		<EmbeddedResource Include="Properties\Resources.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
+			<SubType>Designer</SubType>
+		</EmbeddedResource>
+		<Compile Include="Properties\Resources.Designer.cs">
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Resources.resx</DependentUpon>
+		</Compile>
+		<None Include="Properties\Settings.settings">
+			<Generator>SettingsSingleFileGenerator</Generator>
+			<LastGenOutput>Settings.Designer.cs</LastGenOutput>
+		</None>
+		<Compile Include="Properties\Settings.Designer.cs">
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Settings.settings</DependentUpon>
+			<DesignTimeSharedInput>True</DesignTimeSharedInput>
+		</Compile>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="App.config" />
+	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="Languages\en.txt" />
+		<EmbeddedResource Include="Languages\tr.txt" />
+		<EmbeddedResource Include="Icons\*.png" />
+	</ItemGroup>
+	<ItemGroup>
+		<Content Include="FANFirebirdTool.ico" />
+	</ItemGroup>
+	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+	<!-- Copy the engines of the selected platform next to the exe after each build -->
+	<!-- Copy the engines of the selected platform next to the exe after each build -->
+	<Target Name="CopyEngines" AfterTargets="Build">
+		<ItemGroup>
+			<EngineFiles Include="..\engines\$(Platform)\**\*.*" />
+		</ItemGroup>
+		<Copy SourceFiles="@(EngineFiles)"
+			  DestinationFiles="@(EngineFiles->'$(OutDir)engines\%(RecursiveDir)%(Filename)%(Extension)')"
+			  SkipUnchangedFiles="true" />
+	</Target>
+</Project>

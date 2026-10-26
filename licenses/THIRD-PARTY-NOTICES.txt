@@ -1,0 +1,21 @@
+FAN Firebird Tool - Third-party notices
+=======================================
+
+FAN Firebird Tool itself is released under the MIT License (see LICENSE.txt).
+The release packages also contain the following third-party components.
+
+1. Firebird (engines folder)
+   Firebird 2.5, 3.0, 4.0 and 5.0 command-line tools and embedded libraries,
+   distributed unmodified from the official Firebird Project packages.
+   Website: https://firebirdsql.org
+   License: InterBase Public License (IPL) and Initial Developer's Public
+            License (IDPL). See Firebird\IPLicense.txt and Firebird\IDPLicense.txt.
+            Each engines\fbXX folder also contains its own copy.
+   The Firebird packages include Microsoft Visual C++ runtime libraries and
+   ICU libraries as redistributed by the Firebird Project.
+
+2. Fluent UI System Icons (button and menu icons, embedded in the exe)
+   Copyright (c) 2020 Microsoft Corporation
+   Website: https://github.com/microsoft/fluentui-system-icons
+   License: MIT License. See FluentUI-System-Icons-LICENSE.txt.
+   The icons were recolored and converted to PNG for this application.

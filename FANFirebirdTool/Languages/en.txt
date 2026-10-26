@@ -1,0 +1,131 @@
+# FAN Firebird Tool - English
+language.name=English
+
+about.developer=Developer
+about.email=E-mail
+about.firebirdLicense=The bundled Firebird files are distributed under the IPL and IDPL licenses. See the licenses folder for details.
+about.license=Released under the MIT License.
+about.project=Project page
+about.purpose=A portable tool for backing up, restoring and creating Firebird 2.5 – 5.0 databases and running SQL scripts in order. It needs no installation; everything it needs is in its own folder.
+about.title=About
+about.version=Version {0} ({1})
+
+app.subtitle=Backup, restore and script tool for Firebird 2.5 – 5.0
+
+backup.backupFile=Backup file
+backup.database=Database
+backup.title=Database Backup
+
+create.charset=Default character set
+create.confirmOverwrite=This database already exists. If you continue, its current data will be lost. Do you want to overwrite it?
+create.database=Database
+create.pageSize=Page size
+create.settings=Settings
+create.title=Create Database
+
+err.backupExists=The backup file already exists: {0}
+err.backupFolderMissing=The backup folder was not found.
+err.backupNameMissing=The backup file name was not specified.
+err.backupNotFound=The backup file was not found.
+err.backupSameAsDatabase=The backup file cannot be the same as the database file.
+err.charsetInvalid=The character set name is invalid.
+err.createFailed=The database could not be created. See the output above for details.
+err.createReplaceFailed=The database was created, but the existing file could not be replaced (another program may be using it). The new database is here: {0}
+err.databaseExists=The database already exists: {0}
+err.databaseNameMissing=The database name was not specified.
+err.databaseNotFound=The database file was not found.
+err.engineMissing=The files of the selected Firebird version were not found.
+err.gbakFailed=gbak finished with an error (exit code {0}). See the output above for details.
+err.noScripts=No scripts were selected.
+err.pageSizeInvalid=The selected Firebird version does not support this page size.
+err.restoreReplaceFailed=The restore completed, but the existing file could not be replaced (another program may be using it). The new database is here: {0}
+err.scriptNotFound=Script file not found: {0}
+err.targetExists=The target database already exists: {0}
+err.targetFolderMissing=The target folder was not found.
+err.targetNameMissing=The target database name was not specified.
+
+filter.backup=Firebird backups (*.fbk;*.gbk)|*.fbk;*.gbk|All files (*.*)|*.*
+filter.database=Firebird databases (*.fdb;*.gdb)|*.fdb;*.gdb|All files (*.*)|*.*
+filter.sql=SQL scripts (*.sql)|*.sql
+
+log.notUtf8=WARNING: The file is not valid UTF-8; its encoding may be WIN1254. Check the character set selection.
+log.scriptFailed=--- ERROR: {0} failed.
+log.scriptUnreadable=ERROR: The script file could not be read: {0}
+
+menu.about=About
+menu.backup.desc=Backs up a database to a .fbk / .gbk file.
+menu.create.desc=Creates a new, empty database.
+menu.darkTheme=Dark theme
+menu.engines=Available: {0}
+menu.language=Language
+menu.lightTheme=Light theme
+menu.noEngines=No Firebird version was found in the engines folder.
+menu.restore.desc=Creates a database from a backup file. Also used to move a database to a newer Firebird version.
+menu.script.desc=Runs multiple .sql scripts on a database in the order you choose.
+menu.theme=Theme
+
+ok.backupDone=Backup completed: {0}
+ok.createDone=Database created: {0}
+ok.restoreDone=Restore completed: {0}
+ok.scriptsDone={0} script(s) ran successfully.
+
+res.scriptsSummary={0} succeeded, {1} failed.
+res.scriptsSummaryNotRun={0} succeeded, {1} failed, {2} not run.
+
+restore.backupFile=Backup file
+restore.confirmOverwrite=The target database already exists. If you continue, its current data will be lost. Do you want to overwrite it?
+restore.targetDatabase=Target database
+restore.title=Database Restore
+
+script.addFiles=Add files...
+script.addFolder=Add folder...
+script.charset=Connection character set
+script.colFile=File path
+script.colNo=#
+script.colStatus=Status
+script.confirmRun={0} script(s) will be run on this database. Changes cannot be undone, so taking a backup first is recommended. Continue?
+script.continueOnError=Continue on error
+script.database=Database
+script.failed=Failed
+script.interrupted=Interrupted
+script.moveDown=Move down
+script.moveUp=Move up
+script.notRun=Not run
+script.ok=Succeeded
+script.pickFolder=Select the folder that contains the .sql files.
+script.remove=Remove
+script.resultAllFailed=All scripts ran, and all of them failed.
+script.resultAllOk=All scripts ran successfully.
+script.resultCounts=Succeeded: {0}    Failed: {1}
+script.resultCountsNotRun=Succeeded: {0}    Failed: {1}    Not run: {2}
+script.resultMixed=All scripts ran, but some of them failed.
+script.resultStopped=Execution was stopped because a script failed: {0}
+script.running=Running...
+script.scripts=Scripts (run order)
+script.target=Target
+script.title=Run Scripts
+script.waiting=Waiting
+
+ui.browse=Browse...
+ui.cancel=Cancel
+ui.cancelled=The operation was cancelled.
+ui.cancelling=Cancelling...
+ui.clear=Clear
+ui.confirmCancel=Do you want to cancel the running operation?
+ui.confirmCancelOnClose=An operation is still running. Cancel it and close the window?
+ui.confirmOverwrite=This file already exists. Do you want to overwrite it?
+ui.connection=Connection
+ui.copy=Copy
+ui.elapsed=Elapsed time: {0} s
+ui.engine=Firebird version
+ui.files=Files
+ui.ok=OK
+ui.output=Output
+ui.password=Password
+ui.ready=Ready.
+ui.running=Running...
+ui.showTime=Show time
+ui.start=Start
+ui.unexpectedError=Unexpected error: {0}
+ui.user=User
+ui.verbose=Verbose output

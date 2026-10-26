@@ -1,0 +1,131 @@
+# FAN Firebird Tool - Türkçe
+language.name=Türkçe
+
+about.developer=Geliştirici
+about.email=E-posta
+about.firebirdLicense=Pakete dahil Firebird dosyaları IPL ve IDPL lisanslarıyla dağıtılır. Ayrıntılar licenses klasöründedir.
+about.license=MIT Lisansı ile dağıtılır.
+about.project=Proje sayfası
+about.purpose=Firebird 2.5 – 5.0 veritabanlarını yedeklemek, geri yüklemek, oluşturmak ve SQL script'lerini sırayla çalıştırmak için taşınabilir bir araç. Kurulum gerektirmez; ihtiyaç duyduğu her şey kendi klasöründedir.
+about.title=Hakkında
+about.version=Sürüm {0} ({1})
+
+app.subtitle=Firebird 2.5 – 5.0 için yedekleme, geri yükleme ve script aracı
+
+backup.backupFile=Yedek dosyası
+backup.database=Veritabanı
+backup.title=Veritabanı Yedekle
+
+create.charset=Varsayılan karakter seti
+create.confirmOverwrite=Bu veritabanı zaten var. Devam ederseniz mevcut verileri kaybolur. Üzerine yazılsın mı?
+create.database=Veritabanı
+create.pageSize=Sayfa boyutu
+create.settings=Ayarlar
+create.title=Veritabanı Oluştur
+
+err.backupExists=Yedek dosyası zaten var: {0}
+err.backupFolderMissing=Yedek klasörü bulunamadı.
+err.backupNameMissing=Yedek dosyasının adı belirtilmedi.
+err.backupNotFound=Yedek dosyası bulunamadı.
+err.backupSameAsDatabase=Yedek dosyası, veritabanı dosyasıyla aynı olamaz.
+err.charsetInvalid=Karakter seti adı geçersiz.
+err.createFailed=Veritabanı oluşturulamadı. Ayrıntı için yukarıdaki çıktıya bakın.
+err.createReplaceFailed=Veritabanı oluşturuldu ancak mevcut dosya değiştirilemedi (başka bir program kullanıyor olabilir). Yeni veritabanı şurada duruyor: {0}
+err.databaseExists=Veritabanı zaten var: {0}
+err.databaseNameMissing=Veritabanının adı belirtilmedi.
+err.databaseNotFound=Veritabanı dosyası bulunamadı.
+err.engineMissing=Seçilen Firebird sürümünün dosyaları bulunamadı.
+err.gbakFailed=gbak hata ile bitti (çıkış kodu {0}). Ayrıntı için yukarıdaki çıktıya bakın.
+err.noScripts=Çalıştırılacak script seçilmedi.
+err.pageSizeInvalid=Seçilen Firebird sürümü bu sayfa boyutunu desteklemiyor.
+err.restoreReplaceFailed=Geri yükleme tamamlandı ancak mevcut dosya değiştirilemedi (başka bir program kullanıyor olabilir). Yeni veritabanı şurada duruyor: {0}
+err.scriptNotFound=Script dosyası bulunamadı: {0}
+err.targetExists=Hedef veritabanı zaten var: {0}
+err.targetFolderMissing=Hedef klasör bulunamadı.
+err.targetNameMissing=Hedef veritabanının adı belirtilmedi.
+
+filter.backup=Firebird yedekleri (*.fbk;*.gbk)|*.fbk;*.gbk|Tüm dosyalar (*.*)|*.*
+filter.database=Firebird veritabanları (*.fdb;*.gdb)|*.fdb;*.gdb|Tüm dosyalar (*.*)|*.*
+filter.sql=SQL script'leri (*.sql)|*.sql
+
+log.notUtf8=UYARI: Dosya geçerli UTF-8 değil, kodlama WIN1254 olabilir. Karakter seti seçimini kontrol edin.
+log.scriptFailed=--- HATA: {0} başarısız oldu.
+log.scriptUnreadable=HATA: Script dosyası okunamadı: {0}
+
+menu.about=Hakkında
+menu.backup.desc=Veritabanını .fbk / .gbk dosyasına yedekler.
+menu.create.desc=Yeni ve boş bir veritabanı oluşturur.
+menu.darkTheme=Koyu tema
+menu.engines=Hazır sürümler: {0}
+menu.language=Dil
+menu.lightTheme=Açık tema
+menu.noEngines=engines klasöründe hiçbir Firebird sürümü bulunamadı.
+menu.restore.desc=Yedek dosyasından veritabanı oluşturur. Veritabanını yeni bir Firebird sürümüne taşımak için de kullanılır.
+menu.script.desc=Birden fazla .sql script'ini seçtiğiniz sırayla bir veritabanında çalıştırır.
+menu.theme=Tema
+
+ok.backupDone=Yedek alındı: {0}
+ok.createDone=Veritabanı oluşturuldu: {0}
+ok.restoreDone=Geri yükleme tamamlandı: {0}
+ok.scriptsDone={0} script başarıyla çalıştırıldı.
+
+res.scriptsSummary={0} script başarılı, {1} script hatalı.
+res.scriptsSummaryNotRun={0} script başarılı, {1} script hatalı, {2} script çalıştırılmadı.
+
+restore.backupFile=Yedek dosyası
+restore.confirmOverwrite=Hedef veritabanı zaten var. Devam ederseniz mevcut verileri kaybolur. Üzerine yazılsın mı?
+restore.targetDatabase=Hedef veritabanı
+restore.title=Veritabanı Geri Yükle
+
+script.addFiles=Dosya ekle...
+script.addFolder=Klasör ekle...
+script.charset=Bağlantı karakter seti
+script.colFile=Dosya yolu
+script.colNo=#
+script.colStatus=Durum
+script.confirmRun={0} script bu veritabanında çalıştırılacak. Değişiklikler geri alınamaz, önce yedek almanız önerilir. Devam edilsin mi?
+script.continueOnError=Hatada devam et
+script.database=Veritabanı
+script.failed=Hatalı
+script.interrupted=Yarıda kesildi
+script.moveDown=Aşağı
+script.moveUp=Yukarı
+script.notRun=Çalıştırılmadı
+script.ok=Başarılı
+script.pickFolder=.sql dosyalarının bulunduğu klasörü seçin.
+script.remove=Çıkar
+script.resultAllFailed=Tüm script'ler çalıştı ancak hepsi hatalı.
+script.resultAllOk=Tüm script'ler başarıyla çalıştı.
+script.resultCounts=Başarılı: {0}    Hatalı: {1}
+script.resultCountsNotRun=Başarılı: {0}    Hatalı: {1}    Çalıştırılmadı: {2}
+script.resultMixed=Tüm script'ler çalıştı ancak bazıları hatalı.
+script.resultStopped=Bir script hatalı olduğu için çalışma durduruldu: {0}
+script.running=Çalışıyor...
+script.scripts=Script'ler (çalışma sırası)
+script.target=Hedef
+script.title=Script Çalıştır
+script.waiting=Bekliyor
+
+ui.browse=Gözat...
+ui.cancel=İptal
+ui.cancelled=İşlem iptal edildi.
+ui.cancelling=İptal ediliyor...
+ui.clear=Temizle
+ui.confirmCancel=Çalışan işlem iptal edilsin mi?
+ui.confirmCancelOnClose=Bir işlem hâlâ sürüyor. İptal edip pencereyi kapatmak ister misiniz?
+ui.confirmOverwrite=Bu dosya zaten var. Üzerine yazılsın mı?
+ui.connection=Bağlantı
+ui.copy=Kopyala
+ui.elapsed=Geçen süre: {0} sn
+ui.engine=Firebird sürümü
+ui.files=Dosyalar
+ui.ok=Tamam
+ui.output=Çıktı
+ui.password=Parola
+ui.ready=Hazır.
+ui.running=Çalışıyor...
+ui.showTime=Saati göster
+ui.start=Başlat
+ui.unexpectedError=Beklenmeyen hata: {0}
+ui.user=Kullanıcı
+ui.verbose=Ayrıntılı çıktı
